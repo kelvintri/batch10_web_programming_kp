@@ -1,0 +1,16 @@
+Belajar beberapa tag HTML dasar dan kegunaannya,
+termasuk cara menambahkan gambar,
+membuat tautan/hyperlink,
+menggunakan heading ,
+membuat daftar/list, membuat formulir,
+dan juga menggunakan tabel.
+Semua ini adalah blok dasar penting dari HTML
+
+TAG HTML yang Dipelajari
+<img> untuk menambahkan gambar ke halaman web.
+<a> untuk membuat tautan/hyperlink ke halaman web lain atau ke bagian lain di halaman yang sama.
+<h1> sampai <h6> untuk membuat heading/judul dengan level yang berbeda.
+<ul> dan <ol> untuk membuat daftar yang tidak terurut dan terurut.
+<div> untuk mengelompokkan dan memformat konten pada halaman web.
+<form> untuk membuat formulir, dan berbagai elemen formulir seperti <input> dan <label>.
+<table> untuk membuat tabel dan tag lain seperti <tr>, <td>, dan <th> untuk mengatur data dalam tabel.
