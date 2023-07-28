@@ -1,0 +1,28 @@
+body{
+    height: 1000px;
+}
+.kotak {
+    background:blue;
+    padding: 10px;
+    left: 50%;
+    position: absolute;
+}
+.kotak2 {
+    border: 3px solid green;
+    left: 40px;
+    padding: 10px;
+    text-align: right;
+    position: relative;
+}
+.kotak3 {
+    border: 3px solid red;
+    padding: 10px;
+    left: 40px;
+    position: static;
+}
+.kotak4 {
+    border: 3px solid hotpink;
+    left: 40px;
+    padding: 10px;
+    position: fixed;
+}

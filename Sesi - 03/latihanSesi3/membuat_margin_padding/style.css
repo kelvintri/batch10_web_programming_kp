@@ -1,0 +1,35 @@
+.margin {
+    background-color: dodgerblue;
+}
+
+.margin-satu {
+    background-color: blueviolet;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+}
+
+.margin-dua {
+    background-color: red;
+    height:100px;
+    width: 600px;
+    margin-left: 70px;
+}
+
+.padding {
+    background-color: dodgerblue;
+}
+
+.padding-satu {
+    background-color: blueviolet;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+}
+
+.padding-dua {
+    background-color: red;
+    height:100px;
+    width: 600px;
+    padding-left: 70px;
+}
