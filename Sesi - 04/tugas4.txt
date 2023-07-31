@@ -1,0 +1,32 @@
+1.Algoritma Menghitung Luas dan Keliling Lingkaran
+
+2.Input
+    Nilai jari-jari lingkaran (r)
+    Nilai π = 3.14
+
+3.Langkah Kalkulasi
+    Masukkan nilai jari-jari lingkaran (r) 
+    Masukan nilai pi
+    Hitung luas lingkaran dengan rumus: luas = π x r x r
+    Hitung keliling lingkaran dengan rumus: keliling = 2 x π x r
+
+4.Output
+    Tampilkan nilai luas dan keliling lingkaran yang telah dihitung pada langkah kalkulasi
+
+
+Contoh Skenario
+    Seorang petani ingin menanam padi di sawah berbentuk lingkaran dengan diameter 100 meter. Ia perlu menghitung luas sawah agar dapat menentukan berapa banyak benih yang perlu ditanam.
+    dimana:
+
+    π adalah konstanta yang nilainya sekitar 3,14
+    r adalah jari-jari lingkaran
+    Misalnya, untuk sawah berbentuk lingkaran dengan diameter 100 meter, jari-jarinya adalah 50 meter. Luas sawah dapat dihitung sebagai berikut:
+
+    Luas = πr²
+    = 3,14 × 50²
+    = 7850 meter²
+    Sehingga, petani perlu menanam 7850 butir benih padi untuk menanam padi di sawah tersebut.
+
+
+
+Terlampir juga codingan index.html untuk Menghitung Luas dan Keliling lingkaran
