@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tombol Increment/Decrement</title>
+</head>
+<body>
+	<h1>Tombol Increment/Decrement</h1>
+	<button id="tombolKurang" onclick="tombolKurang()">-</button>
+	<span id="angka">0</span>
+	<button id="tombolTambah" onclick="tombolTambah()">+</button>
+
+    <br>
+    <h1>Rubah tombol</h1>
+    <button id="klikAkuButton" onclick="rubahTombol()">Klik aku</button>
+
+	<script>
+		const angka = document.getElementById("angka");
+
+		let hitung = 0;
+
+		function tombolKurang() {
+			hitung--;
+			angka.textContent = hitung;
+		}
+
+		function tombolTambah() {
+			hitung++;
+			angka.textContent = hitung;
+		}
+
+        
+        function rubahTombol() {
+			if (klikAkuButton.textContent === "Klik aku") {
+				klikAkuButton.textContent = "Halo YAL";
+			} else {
+				klikAkuButton.textContent = "Klik aku";
+			}
+        }
+	</script>
+</body>
+</html>

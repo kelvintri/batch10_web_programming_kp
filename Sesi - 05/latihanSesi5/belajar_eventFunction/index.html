@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hitung Grade</title>
+</head>
+<body>
+	<h1>Hitung Grade</h1>
+
+	<label for="nilaiInput">Masukkan nilai:</label>
+	<input type="number" id="nilaiInput" name="nilai" min="0" max="100">
+	<button onclick="hitung()">Hitung</button>
+
+	<p id="gradeOutput"></p>
+
+	<script>
+		function hitung() {
+			const nilai = document.getElementById("nilaiInput").value;
+
+			const grade = hitungGradePembanding(nilai);
+
+			document.getElementById("gradeOutput").textContent = "Nilai " + nilai + " memiliki grade " + grade;
+		}
+
+		function hitungGradePembanding(nilai) {
+			let grade = "";
+			if (nilai >= 90 && nilai <= 100) {
+				grade = "A";
+			} else if (nilai >= 80 && nilai <= 89) {
+				grade = "B";
+			} else if (nilai >= 70 && nilai <= 79) {
+				grade = "C";
+			} else if (nilai >= 60 && nilai <= 69) {
+				grade = "D";
+			} else if (nilai >= 0 && nilai <= 59) {
+				grade = "E";
+			} else {
+				grade = "Nilai tidak valid";
+			}
+			return grade;
+		}
+	</script>
+</body>
+</html>

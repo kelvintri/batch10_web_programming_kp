@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 5</title>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <h1>Pesan Berulang</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Masukan Pesan</h2>
+        </div>
+        <div class="card-body">
+          <div id="mengulangJudul">
+            <label for="judul">Pesan :</label>
+            <input type="text" id="judul" /><br />
+
+            <label for="jumlah">Berapa kali :</label>
+            <input type="number" id="jumlah" /><br />
+
+            <button type="submit" onclick="cetakTeks()">Cetak!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-ol">
+      <div class="card-ol-header">
+        <h2 class="card-ol-title">Hasil</h2>
+      </div>
+      <div class="card-ol-body">
+        <ol id="pesanList"></ol>
+      </div>
+    </div>
+    <footer>Made with ❤️ by Kelvin</footer>
+    <script>
+      // const nama_variabel= document.getElementById("nama_variabel")
+      function cetakTeks() {
+        //ambil nilai judul dan jumlah
+        const judul = document.getElementById("judul").value;
+        const jumlah = document.getElementById("jumlah").value;
+
+        //referensi ordered list
+        const ol = document.getElementById("pesanList");
+
+        //hapus isi didalam ol
+        ol.innerHTML = "";
+
+        //perulangan dari jumlah dan tambah element li berisikan judul sebanyak jumlah
+        for (let i = 1; i <= jumlah; i++) {
+          //buat element li sebanyak jumlah
+          const li = document.createElement("li");
+          //li berisikan judul
+          li.textContent = judul;
+          //jadikan li sebagai child element dari ol
+          ol.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>

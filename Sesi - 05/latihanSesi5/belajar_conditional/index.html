@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar Kondisional</title>
+  </head>
+  <body>
+    <!-- Cek Lapar -->
+    <h1>Cek Lapar</h1>
+    <label>Kondisi:</label><input id="kondisi" type="text" />
+    <br />
+    <br />
+    <button onclick="cekLapar()">Cek Lapar</button>
+    <p id="hasil"></p>
+    <br>
+    <br>
+    
+    <!-- Hitung Grade -->
+    <h1>Hitung Grade</h1>
+
+	<label for="nilaiInput">Masukkan nilai:</label>
+	<input type="number" id="nilaiInput" name="nilai" min="0" max="100">
+    <br>
+	<button onclick="hitung()">Hitung</button>
+
+	<p id="gradeOutput"></p>
+    <script>
+        // function cek Lapar
+      function cekLapar() {
+        let kondisi = document.getElementById("kondisi").value;
+        let hasil = "";
+        if (kondisi === "lapar") {
+          // waktu makan
+          hasil = "waktu makan";
+        } else {
+          // bukan waktu makan
+          hasil = "bukan waktu makan";
+        }
+        document.getElementById("hasil").innerHTML = hasil;
+      }
+
+    //======================================================
+    //function Cek Grade
+    function hitung() {
+			const nilai = document.getElementById("nilaiInput").value;
+
+			const grade = hitungGradePembanding(nilai);
+
+			document.getElementById("gradeOutput").textContent = grade;
+		}
+
+		function hitungGradePembanding(nilai) {
+			let grade = "";
+			if (nilai >= 90 && nilai <= 100) {
+				grade = "A";
+			} else if (nilai >= 80 && nilai <= 89) {
+				grade = "B";
+			} else if (nilai >= 70 && nilai <= 79) {
+				grade = "C";
+			} else if (nilai >= 60 && nilai <= 69) {
+				grade = "D";
+			} else if (nilai >= 0 && nilai <= 59) {
+				grade = "E";
+			} else {
+				grade = "Nilai tidak valid";
+			}
+			return grade;
+		}
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Tipe data JS</title>
+  </head>
+  <body>
+    <h1>Latihan Tipe data Number</h1>
+    <p id="hasil_number"></p>
+    <br />
+
+    <h1>Latihan Tipe data String</h1>
+    <p id="hasil_string"></p>
+    <br />
+
+    <h1>Latihan Tipe data Array</h1>
+    <p id="hasil_array"></p>
+    <br />
+
+    <h1>Latihan Tipe data Objek</h1>
+    <p id="hasil_objek"></p>
+    <br />
+
+    <script type="text/javascript">
+      //Tipe data Number
+      const number = 90;
+      document.getElementById("hasil_number").innerHTML = number;
+
+      //Tipe data String
+      const string = "Belajar JS di Workshop WFDB";
+      document.getElementById("hasil_string").innerHTML = string;
+
+      //Tipe data Array
+      const array = ["Mobil", "Motor", "Pesawat", "Kapal"];
+      document.getElementById("hasil_array").innerHTML = array[0];
+
+      // /Tipe data Objek
+      const objek = {
+        nama: "Kelvin Tri",
+        asal: "Bali",
+        usia: 24,
+      };
+      document.getElementById("hasil_objek").innerHTML = objek.nama;
+    </script>
+  </body>
+</html>

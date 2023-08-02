@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar perulangan</title>
+  </head>
+  <body>
+    <h1>Print 3x</h1>
+    <button onclick="print3x()">Print 3x</button>
+    <div id="text"></div>
+    <br />
+    <!-- =================================================== -->
+    <h1>Print 3x</h1>
+    <button onclick="printMakanan()">Print Makanan Kesukaan</button>
+    <ul id="list"></ul>
+
+    <script>
+      function print3x() {
+        const dt = document.getElementById("text");
+        let hitung = 0;
+        for (let hitung = 0; hitung < 3; hitung++) {
+          dt.innerHTML = dt.innerHTML + "<p>saya sudah belajar for loop!</p>";
+        }
+      }
+
+      function printMakanan() {
+        const list_makanan = ["nasi goreng", "mie goreng", "ayam bakar"];
+        const dt = document.getElementById("list");
+        for (let i = 0; i < list_makanan.length; i++) {
+          const li = document.createElement("li");
+          const text = document.createTextNode(list_makanan[i]);
+          li.appendChild(text);
+          dt.appendChild(li);
+        }
+      }
+    </script>
+  </body>
+</html>
